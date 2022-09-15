@@ -1,14 +1,57 @@
-// Import file system
-const fs = require('fs');
+// Import notes.js & call, print getNotes()
+const getNotes = require('./notes.js');
+const yargs = require('yargs');
+const chalk = require('chalk');
+const { string, argv } = require('yargs');
 
-//fs.writeFileSync('notes.txt', 'My name is Mugabe!');
+//
+yargs.version('1.1.0');
 
-// Challenge: Append a message to notes.txt
+yargs.command({
+    command: 'add',
+    describe: 'Add a new note',
+    builder: {
+        title: {
+            describe: 'Note title',
+            demandOption: true,
+            type: 'string'
+        },
+        body: {
+            describe: 'Note body',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function (argv) {
+        console.log('Title: ' + argv.title);
+        console.log('Body: ' + argv.body);
+} });
 
-// 1. Use appendFileSync to append to the file
-fs.appendFileSync('notes.txt', ' Added this text.');
+// Remove
+// yargs.command({
+//     command: "remove",
+//     describe: "Removing a notes",
+//     handler: function() {
+//         console.log("Removing a note");
+//     }
+// });
 
-// 2. Run the script
-// - node app
+// Read
+// yargs.command({
+//     command: "read",
+//     describe: "Reading a notes",
+//     handler: function() {
+//         console.log("Reading a note")
+//     }
+// });
 
-// 3. Open and view the text
+// List
+// yargs.command({
+//     command: "list",
+//     describe: "Listing a note",
+//     handler: function() {
+//         console.log("Listing a note")
+//     }
+// });
+
+yargs.parse();
