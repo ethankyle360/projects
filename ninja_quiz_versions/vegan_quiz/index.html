@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vegan Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <header class="text-center py-5">
+        <h1 class="display-1 text-success">Vegan Quiz</h1>
+    </header>
+
+    <section class="result d-none py-4 bg-light text-center">
+        <h2><span class="score">0%</span></h2>
+    </section>
+
+    <section class="py-4 bg-success text-center">
+        <div class="container text-light py-5">
+            <h2>On with the questions...</h2>
+            <form class="quiz-form">
+                <div class="py-5">
+                    <h3>1. Do you only eat vegetables and fruits?</h3>
+                    <input type="radio" name="q1" value="YES" checked>Yes
+                    <input type="radio" name="q1" value="NO">No, I eat meat.
+                </div>
+                <div class="py-5">
+                    <h3>2. Do you love animals?</h3>
+                    <input type="radio" name="q2" value="YES" checked>Yes
+                    <input type="radio" name="q2" value="NO">No, I hunt deers.
+                </div>
+                <div class="py-5">
+                    <h3>3. Do you believe in conserving the environment</h3>
+                    <input type="radio" name="q3" value="YES" checked>Yes
+                    <input type="radio" name="q3" value="NO">No, I always use plastic
+                </div>
+                <div class="py-5">
+                    <h3>4. Are you an animal activist?</h3>
+                    <input type="radio" name="q4" value="YES" checked>Yes
+                    <input type="radio" name="q4" value="NO">No, don't care about it.
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
