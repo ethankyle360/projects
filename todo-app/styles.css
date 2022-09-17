@@ -1,0 +1,32 @@
+html, body {
+    text-align: center;
+}
+
+h1:hover {
+    color: green;
+    
+}
+
+input {
+    margin-right: 5px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.todoBox {
+    border: 2px solid green;
+    text-align: center;
+    width: 250px;
+    margin-left: 40%;
+    border-radius: 2rem;
+}
+
+.todoList {
+    text-align: center;
+    margin-left: 30%;
+}
