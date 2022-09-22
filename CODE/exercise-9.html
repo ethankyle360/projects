@@ -1,0 +1,50 @@
+<html>
+    <title>Exercise 9</title>
+
+    <!-- <button onclick="addToCart('Apple')">Apple</button>
+    <button onclick="addToCart('Tomato')">Tomato</button>
+    <button onclick="addToCart('Eggs')">Eggs</button>
+    <button onclick="clearCart()">Clear</button>
+    <div id="cart"></div> -->
+
+    <input id="number" type="text">
+    <button onclick="cm()">Convert to cm</button>
+    <button onclick="inch()">Convert to inch</button>
+    <div id="result"></div>
+
+    <script>
+        // Exercise 1
+        // const cart = document.getElementById('cart');
+
+        // function addToCart(food) {
+        //     const cartItem = document.createElement('div');
+        //     cartItem.innerText = food;
+        //     cart.appendChild(cartItem);
+        // }
+
+        // function clearCart() {
+        //     cart.innerHTML = '';
+        // }
+
+        // Exercise 2
+        const result = document.getElementById('result');
+
+        function cm() {
+            const input = document.getElementById('number'); // input
+            const number = parseInt(input.value); // actual number
+            const centimeter = number * 2.54;
+            //console.log(centimeter);
+            const calculation = document.createElement('div');
+            calculation.innerText = centimeter;
+            result.appendChild(calculation);
+        }
+        function inch() {
+            const input = document.getElementById('number'); // input
+            const number = parseInt(input.value); // actual number
+            const inches = number * 0.3937;
+            const calculation = document.createElement('div');
+            calculation.innerText = inches;
+            result.appendChild(calculation);
+        }
+    </script>
+</html>

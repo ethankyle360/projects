@@ -1,0 +1,9 @@
+#loginPopup {
+    display: none;
+    background-color: lightblue;
+}
+
+#bookItems {
+    margin-top: 1rem;
+    display: flex;
+}

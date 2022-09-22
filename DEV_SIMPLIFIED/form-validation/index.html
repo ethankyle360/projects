@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!-- error text after submitting form -->
+    <div id="error"></div>
+    <!-- reload form in the same page -->
+    <form id="form" action="./index.html" method="GET"> 
+        <!-- input name -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text " name="name" id="name" required>
+        </div>
+        <!-- input password -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <!-- submit name and password -->
+        <button>Submit</button>
+    </form>
+</body>
+</html>
